@@ -3,4 +3,9 @@
     <string name="app_name">AndroidLabs</string>
     <string name="hello_message">世界の皆さんこんにちは。</string>
     <string name="ButtonText">私はボタンです。</string>
+    <string name="LoginText">ログイン</string>
+    <string name="Password">パスワード</string>
+    <string name="SwitchText">これは何ですか？</string>
+    <string name="RadioButtonText">ラジオボタン</string>
+    <string name="CheckBoxText">チェックボックス</string>
 </resources>
