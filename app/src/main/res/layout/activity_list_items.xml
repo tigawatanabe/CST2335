@@ -9,23 +9,27 @@
     tools:context=".ListItemsActivity">
 
     <RadioButton
-        android:text="@string/RadioButtonText"
+        android:id="@+id/radioButtonPOOP"
         android:layout_columnWeight="1"
-        android:gravity="fill"/>
+        android:gravity="fill"
+        android:text="@string/RadioButtonText" />
 
     <CheckBox
         android:text="@string/CheckBoxText"
         android:layout_columnWeight="1"
+        android:id="@+id/checkBox"
         android:gravity="fill"/>
 
     <Switch
         android:text="@string/SwitchText"
         android:layout_columnWeight="1"
+        android:id="@+id/switchButton"
         android:gravity="fill"
         />
 
     <ImageButton android:src="@android:drawable/ic_menu_camera"
         android:layout_columnWeight="1"
+        android:id="@+id/imageButton"
         android:gravity="fill"
         android:contentDescription=""/>
 

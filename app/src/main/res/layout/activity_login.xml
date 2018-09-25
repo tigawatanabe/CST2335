@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="login name"
+        android:id="@+id/editOne"
         android:inputType="textEmailAddress" />
 
     <!-- setting up the Password text widget -->
@@ -28,11 +29,17 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/editTwo"
         android:inputType="textPassword"/>
     <!-- Setting up the flag images via Imageview widget -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/flag"/>
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LoginButton" />
 
 </LinearLayout>

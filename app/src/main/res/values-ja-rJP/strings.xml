@@ -8,4 +8,8 @@
     <string name="SwitchText">これは何ですか？</string>
     <string name="RadioButtonText">ラジオボタン</string>
     <string name="CheckBoxText">チェックボックス</string>
+    <string name="dialog_message">エグジットしたいですか？</string>
+    <string name="dialog_title">コンファーム</string>
+    <string name="ok">OK</string>
+    <string name="cancel">キャンセル</string>
 </resources>
