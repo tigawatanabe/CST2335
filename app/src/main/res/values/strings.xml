@@ -12,5 +12,7 @@
     <string name="dialog_title">Confirmation</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
-
+    <string name="startChat">Start Chat!</string>
+    <string name="sendButton">Send</string>
+    <string name="chatEdit">Type your message here</string>
 </resources>

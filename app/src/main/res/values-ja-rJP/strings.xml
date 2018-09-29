@@ -12,4 +12,5 @@
     <string name="dialog_title">コンファーム</string>
     <string name="ok">OK</string>
     <string name="cancel">キャンセル</string>
+    <string name="startChat">チャット</string>
 </resources>

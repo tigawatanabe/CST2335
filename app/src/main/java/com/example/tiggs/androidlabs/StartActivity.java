@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class StartActivity extends Activity {
     protected static final String ACTIVITY_NAME = "StartActivity";
     Button button;
+    Button startChat;
 
     protected void onActivityResult(int requestCode,int responseCode, Intent data){
 
@@ -32,6 +33,17 @@ public class StartActivity extends Activity {
 
         //reference the button from XML
         button=findViewById(R.id.button);
+        startChat=findViewById(R.id.startChat);
+
+        startChat.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+                Intent intent = new Intent (StartActivity.this, ChatWindow.class);
+                startActivity(intent);
+            }
+        });
+
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -41,6 +53,7 @@ public class StartActivity extends Activity {
 
             }
         });
+
     }
 
     @Override
