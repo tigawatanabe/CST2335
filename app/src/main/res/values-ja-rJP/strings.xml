@@ -8,9 +8,11 @@
     <string name="SwitchText">これは何ですか？</string>
     <string name="RadioButtonText">ラジオボタン</string>
     <string name="CheckBoxText">チェックボックス</string>
-    <string name="dialog_message">エグジットしたいですか？</string>
+    <string name="dialog_message">アプリを閉じますか？</string>
     <string name="dialog_title">コンファーム</string>
     <string name="ok">OK</string>
     <string name="cancel">キャンセル</string>
-    <string name="startChat">チャット</string>
+    <string name="startChat">チャットを始める</string>
+    <string name="sendButton">送信</string>
+    <string name="chatEdit">メッセージ。。。</string>
 </resources>
