@@ -22,7 +22,6 @@ public class ListItemsActivity extends Activity {
     Switch switchButton;
     RadioButton radioButton;
     CheckBox checkBox;
-
     static final int REQUEST_IMAGE_CAPTURE = 1;
     //function to take pic
     private void dispatchTakePictureIntent() {
