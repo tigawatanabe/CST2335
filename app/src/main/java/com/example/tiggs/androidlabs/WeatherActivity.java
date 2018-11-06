@@ -128,14 +128,7 @@ public class WeatherActivity extends Activity {
                     }
 
                 }
-
-            } catch (IOException e) {
-                Log.i("Exception", e.getMessage());
-            } catch (XmlPullParserException e) {
-                Log.i("Exception", e.getMessage());
-            }
-            try {
-                Log.i("trying to dl image", null);
+                Log.i("trying to dl image", "I really am trying");
                 //check if image is already stored in storage
                 File file = getBaseContext().getFileStreamPath(iconName + ".png");
                 if (!file.exists()) {
@@ -164,9 +157,10 @@ public class WeatherActivity extends Activity {
                     Log.i("image file not found: ", iconName + ".png");
 
                 }
-
-            } catch (Exception e) {
-                return null;
+            } catch (IOException e) {
+                Log.i("Exception", e.getMessage());
+            } catch (XmlPullParserException e) {
+                Log.i("Exception", e.getMessage());
             }
             return "";
 
