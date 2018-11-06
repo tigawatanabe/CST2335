@@ -13,6 +13,7 @@ public class StartActivity extends Activity {
     protected static final String ACTIVITY_NAME = "StartActivity";
     Button button;
     Button startChat;
+    Button weatherButton;
 
     protected void onActivityResult(int requestCode,int responseCode, Intent data){
 
@@ -34,6 +35,12 @@ public class StartActivity extends Activity {
         //reference the button from XML
         button=findViewById(R.id.button);
         startChat=findViewById(R.id.startChat);
+        weatherButton = findViewById(R.id.currentWeather);
+
+        weatherButton.setOnClickListener( e -> {
+                Intent intent = new Intent (StartActivity.this, WeatherActivity.class);
+                startActivity(intent);
+        });
 
         startChat.setOnClickListener(new View.OnClickListener(){
             @Override

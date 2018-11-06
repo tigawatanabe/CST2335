@@ -71,7 +71,7 @@ public class WeatherActivity extends Activity {
         String curTemp;
         String iconName;
         String urlString = "http://api.openweathermap.org/data/2.5/weather?q=ottawa,ca&APPID=d99666875e0e51521f0040a3d97d0f6a&mode=xml&units=metric";
-        String imageUrlString = "http://openweathermap.org/img/w/" + iconName + ".png";
+        String imageUrlString = null;
         Bitmap weatherIcon;
 
 
@@ -110,28 +110,23 @@ public class WeatherActivity extends Activity {
                                 publishProgress(75);
                                     Log.i("Max Temp: ", maxTemp);
                             }
-                            if (name.equals("wind")) {
-                                parser.nextTag();
-
-                                //if ()
-                                speed = parser.getAttributeValue(null, "value");
-                                Log.i("Wind Speed: ", speed);
-
                                 if (name.equals("speed")) {
                                     speed = parser.getAttributeValue(null, "value");
                                     Log.i("Wind Speed: ", speed);
+
                                 }
-                            }
+
                             if (name.equals("weather")) {
                                 iconName = parser.getAttributeValue(null, "icon");
                                 Log.i("Weather Icon Name: ", iconName);
+                                imageUrlString = "http://openweathermap.org/img/w/" + iconName + ".png";
                             }
                             Log.i("XML tag is: ", name);
                             break;
                         case XmlPullParser.TEXT:
                             break;
                     }
-                    parser.next();
+
                 }
 
             } catch (IOException e) {
